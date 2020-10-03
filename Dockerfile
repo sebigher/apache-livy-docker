@@ -36,3 +36,5 @@ COPY ./livy.conf /src/livy/apache-livy-0.7.0-incubating-bin/conf/
 SHELL ["/bin/bash", "-c"]
 RUN mkdir -p /src/livy/apache-livy-0.7.0-incubating-bin/logs
 CMD ["/src/livy/apache-livy-0.7.0-incubating-bin/bin/livy-server"]
+
+EXPORT 8998
